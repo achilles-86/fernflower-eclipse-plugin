@@ -427,7 +427,7 @@ public class DecompileDialog extends Dialog {
 
 	private boolean wasTargetDirectorySpecified(String targetDirectory) {
 		boolean validationResult = true;
-		if ((targetDirectory == null) || (targetDirectory.isEmpty())) {
+		if ((targetDirectory == null) || (StringUtils.isEmpty(targetDirectory))) {
 			String message = "Target Directory was not specified. Please specify directory where files will be decompiled to.";
 			LoggerUtil.logWarning(message);
 			MessageDialog.openWarning(getShell(), "Target Directory..", message);

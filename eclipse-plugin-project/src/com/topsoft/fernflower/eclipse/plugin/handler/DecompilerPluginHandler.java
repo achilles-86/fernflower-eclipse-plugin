@@ -32,6 +32,7 @@ public class DecompilerPluginHandler extends AbstractHandler {
 		IStructuredSelection structuredSelection = (IStructuredSelection) selection;
 		List<String> result = new LinkedList<String>();
 
+		@SuppressWarnings("unchecked")
 		Iterator<Object> selectionIterator = structuredSelection.iterator();
 		while (selectionIterator.hasNext()) {
 			Object selectionElement = selectionIterator.next();
